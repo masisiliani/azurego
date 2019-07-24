@@ -2,7 +2,7 @@
 
 POC de uma API que retorna um JSON na porta 5000.
 **Rotas**
-http://localhost:5000/dev
+http://localhost:5000/devs
 
 
 ## Docker Instructions  
@@ -12,11 +12,11 @@ docker build -t nomedaimagem .
 ``docker build -t masisiliani/azurego .``
 
 Cria o container 
-docker run --publish suaporta:8080 --name nomedocontainer --rm nomedaimagem
+docker run --publish suaporta:5000 --name nomedocontainer --rm nomedaimagem
+Estamos informando que a porta 5000 no Host é aberta e deve ser mapeada na porta 5000 do container.
+``docker run --publish 5000:5000 --name azuregocontainer --rm masisiliani/azurego``
 
-``docker run --publish 5000:8080 --name azuregocontainer --rm masisiliani/azurego``
-
-Para o container
+Parar o container
 docker stop nomedocontainer
 
 ``docker stop azuregocontainer``
