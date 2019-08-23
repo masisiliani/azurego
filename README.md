@@ -24,7 +24,7 @@ docker stop nomedocontainer
 push para docker.hub
 docker login --username nomedoseuusuario -p suasenha
 
-``docker login --username masisiliani -p adm123*``
+``docker login --username [seulogin] -p [suasenha]``
 
 docker push imagename
 
