@@ -6,17 +6,21 @@ import (
 
 func main() {
 	mux := http.NewServeMux()
-	mux.HandleFunc("/devs", Desenvolvedores)
+	mux.HandleFunc("/devas", Desenvolvedores)
 
 	http.ListenAndServe(":5000", mux)
 }
 
-func Desenvolvedores(w http.ResponseWriter, r *http.Request) {
+func Desenvolvedoras(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 
-	jsonStr := `[{"Nome":"Silvana","Idade":29,"Especialidade":"Vue"}, 
-				{"Nome":"Marcela","Idade":31,"Especialidade":"GoLang"},
-				{"Name":"Jessica","Idade":27,"Especialidade":".NET"}]`
+	jsonStr := `[{"name":"Silvana","age":29,"favlang":"Vue", "twitter":"@silcrana"}, 
+				{"name":"Marcela","age":31,"favlang":"Golang","twitter":"@masisiliani"},
+				{"name":"Jessica Temporal","age":25,"favlang":"Python","twitter":"@jessTemporal"},
+				{"name":"Marylly","age":25,"favlang":"Java","twitter":"@MaryllyOficial"},				
+				{"name":"Lauren","age":23,"favlang":"Go","twitter":"@laurienmf"},			
+				{"name":"Erika","age":23,"favlang":"Go","twitter":"@erikones_"},
+				{"name":"Jessica Nathany","age":27,"favlang":".NET","twitter":"@JessicaNathanyF"}]`
 
 	w.Write([]byte(jsonStr))
 }

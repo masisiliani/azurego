@@ -24,13 +24,21 @@ docker stop nomedocontainer
 push para docker.hub
 docker login --username nomedoseuusuario -p suasenha
 
-``docker login --username masisiliani -p adm123*``
+``docker login --username [nomedoseuusuario] -p [suasenha]``
+
+Para não expor a senha usar 
+
+``docker login``
 
 docker push imagename
 
 ``docker push masisiliani/azurego``
 
 ## Azure Instructions 
+
+Acessar o [Portal Azure](https://portal.azure.com/#home) (Nesse momento é necessário já ter o cadastro da conta)
+E utilizar o cli para executar os comandos abaixo: 
+
 Resource Group - devWomanGo
 
 ``az group create --name devWomanGo --location "West Europe"``
@@ -50,3 +58,11 @@ Deletar toda a estrutura criada
 ## Author
 
 By [Marcela Sisiliani](https://msisiliani.github.io) - 2019
+
+## Referências
+
+[Comandos Docker](https://woliveiras.com.br/posts/comandos-mais-utilizados-no-docker/)
+[Cadastro no Portal Azure](https://azure.microsoft.com/pt-br/free/)
+[Portal Azure](https://portal.azure.com/#home)
+[Docker Hub](https://hub.docker.com)
+[Dicionário de comandos da Azure](https://docs.microsoft.com/en-us/cli/azure/group?view=azure-cli-latest)
