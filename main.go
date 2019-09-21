@@ -19,7 +19,7 @@ func Desenvolvedoras(w http.ResponseWriter, r *http.Request) {
 	// Adicionamos um header ao nosso response, informando que o content type retornado vai ser em json
 	w.Header().Set("Content-Type", "application/json")
 
-	//criamos uma listagem, estática, de objetos
+	//criamos uma listagem, estática, de objetos.
 	//Aqui é construida a listagem que vamos retornar na nossa API
 	jsonStr := `[{"name":"Silvana","age":29,"favlang":"Vue", "twitter":"@silcrana"}, 
 				{"name":"Marcela","age":31,"favlang":"Golang","twitter":"@masisiliani"},

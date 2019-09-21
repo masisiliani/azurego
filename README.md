@@ -24,11 +24,15 @@ docker stop nomedocontainer
 push para docker.hub
 docker login --username nomedoseuusuario -p suasenha
 
+<<<<<<< HEAD
 ``docker login --username [nomedoseuusuario] -p [suasenha]``
 
-Para não expor a senha usar 
+Para não expor a senha usar.
 
-``docker login``
+``docker login`` 
+=======
+``docker login --username [seulogin] -p [suasenha]``
+>>>>>>> 7c94804761f0a31195dd0e0c7438fea1e60e29d8
 
 docker push imagename
 
