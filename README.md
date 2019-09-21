@@ -2,7 +2,7 @@
 
 POC de uma API que retorna um JSON na porta 5000.
 **Rotas**
-http://localhost:5000/devs
+http://localhost:5000/devas
 
 
 ## Docker Instructions  
@@ -24,15 +24,12 @@ docker stop nomedocontainer
 push para docker.hub
 docker login --username nomedoseuusuario -p suasenha
 
-<<<<<<< HEAD
 ``docker login --username [nomedoseuusuario] -p [suasenha]``
 
 Para não expor a senha usar.
 
 ``docker login`` 
-=======
-``docker login --username [seulogin] -p [suasenha]``
->>>>>>> 7c94804761f0a31195dd0e0c7438fea1e60e29d8
+
 
 docker push imagename
 
