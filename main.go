@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"net/http"
 )
 
@@ -12,6 +13,8 @@ func main() {
 	mux.HandleFunc("/devas", Desenvolvedoras)
 
 	//Configuramos para nosso server responder na porta 5000, ou seja, http://localhost:5000/[rota]
+	
+	fmt.Println("Servindo na porta 5000")
 	http.ListenAndServe(":5000", mux)
 }
 
@@ -21,8 +24,8 @@ func Desenvolvedoras(w http.ResponseWriter, r *http.Request) {
 
 	//criamos uma listagem, estática, de objetos.
 	//Aqui é construida a listagem que vamos retornar na nossa API
-	jsonStr := `[{"name":"Silvana","age":29,"favlang":"Vue", "twitter":"@silcrana"}, 
-				{"name":"Marcela","age":31,"favlang":"Golang","twitter":"@masisiliani"},
+	jsonStr := `[{"name":"Silvana","age":22,"favlang":"Vue", "twitter":"@silcrana"}, 
+				{"name":"Marcela","age":75,"favlang":"Golang","twitter":"@masisiliani"},
 				{"name":"Jessica Temporal","age":25,"favlang":"Python","twitter":"@jessTemporal"},
 				{"name":"Marylly","age":25,"favlang":"Java","twitter":"@MaryllyOficial"},				
 				{"name":"Lauren","age":23,"favlang":"Go","twitter":"@laurienmf"},			
