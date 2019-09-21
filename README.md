@@ -4,8 +4,16 @@ POC de uma API que retorna um JSON na porta 5000.
 **Rotas**
 http://localhost:5000/devas
 
+## Go Instructions  
 
-## Docker Instructions  
+Comando executa localmente
+``go run main.go``
+
+Comando gera o binário
+``go build``
+
+
+## Docker Instructions Local
 Cria a imagem do linux alpine com a instalação do go
 docker build -t nomedaimagem .
 
@@ -21,6 +29,10 @@ docker stop nomedocontainer
 
 ``docker stop azuregocontainer``
 
+
+
+## Docker Instructions DockerHub
+
 push para docker.hub
 docker login --username nomedoseuusuario -p suasenha
 
@@ -34,6 +46,7 @@ Para não expor a senha usar.
 docker push imagename
 
 ``docker push masisiliani/azurego``
+
 
 ## Azure Instructions 
 
