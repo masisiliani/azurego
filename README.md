@@ -4,7 +4,7 @@ POC de uma API que retorna um JSON na porta 5000.
 **Rotas**
 http://localhost:5000/devas
 
-## Go Instructions  
+## Go Instructions
 
 Comando executa localmente
 ``go run main.go``
@@ -19,7 +19,7 @@ docker build -t nomedaimagem .
 
 ``docker build -t masisiliani/azurego .``
 
-Cria o container 
+Cria o container
 docker run --publish suaporta:5000 --name nomedocontainer --rm nomedaimagem
 Estamos informando que a porta 5000 no Host é aberta e deve ser mapeada na porta 5000 do container.
 ``docker run --publish 5000:5000 --name azuregocontainer --rm masisiliani/azurego``
@@ -40,7 +40,7 @@ docker login --username nomedoseuusuario -p suasenha
 
 Para não expor a senha usar.
 
-``docker login`` 
+``docker login``
 
 
 docker push imagename
@@ -48,10 +48,10 @@ docker push imagename
 ``docker push masisiliani/azurego``
 
 
-## Azure Instructions 
+## Azure Instructions
 
 Acessar o [Portal Azure](https://portal.azure.com/#home) (Nesse momento é necessário já ter o cadastro da conta)
-E utilizar o cli para executar os comandos abaixo: 
+E utilizar o cli para executar os comandos abaixo:
 
 Resource Group - devWomanGo
 
@@ -71,7 +71,7 @@ Deletar toda a estrutura criada
 
 ## Author
 
-By [Marcela Sisiliani](https://msisiliani.github.io) - 2019
+By [Marcela Sisiliani](https://twitter.com/masisiliani) - 2019
 
 ## Referências
 
